@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+  <head>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="container">
+  
+    </div>
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('worker.js').then(function(registration) {
+          console.log('Worker registration successful', registration.scope);
+        }, function(err) {
+          console.log('Worker registration failed', err);
+        }).catch(function(err) {
+          console.log(err);
+        });
+      });
+    } else {
+      console.log('Service Worker is not supported by browser.');
+    }
+  </script>
+</html>
+
