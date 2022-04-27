@@ -1,3 +1,4 @@
+# Follow the guide named todo-pwa-guide.txt file for running the project locally.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
