@@ -1,0 +1,4 @@
+command 1 :- create a folder in any directory with name as app
+command 2 :- npx create-react-app .
+command 3 :- then just replace the public and src folder of the created react with the drive folder of public and src
+command 4 :- add the apple touch icon from the drive to public folder of react app... if already there then there is no need...
